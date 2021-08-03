@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네번째</title>
+</head>
+<body>
+  <h2>HTML 블록요소 인라인요소</h2>
+  <div> 블록요소 한 행을 차지한다, 너비와 높이를 설정할수있다</div>
+  <span> 인라인요소 텍스트상자이다. 텍스트 스타일 조정가능</span>
+  <p>div(블록) 와 span(인라인) 속성은 논 시멘틱 태그이다 </p>
+  <p>시멘틱 태그란 의미있는 태그 (약속된자리태그)</p>
+  <br>
+  <h3>시멘틱태그종류</h3>
+  <p>
+    <li>header : 주로 내용의 제목이나 주제를 담고있을때 사용</li>
+    <li>nav :네비게이션 바 영역을 나타냄. 즉 다른곳으로 이동이 가능한 링크로 <br> 
+        구성된영역으로 a 태그에 href 속성들을 감쌀 때 주로 사용한다.</li>
+    <li>select : 마땅히 문서의 내용을 표현할 시멘틱 태그는없지만 구분하려고할때 주로사용한다 . <br>
+      자신만의 독립적인 콘텐츠를 가지지않은 내용을 감쌀때 사용함</li>
+      <br>
+    <li>article : 자신만의 독립적인 콘텐츠를 가질때 사용. 예를들어 포스트글 신문기사 등</li>
+    <li>aside : 컨텐츠의 부가적인 설명을 사이드바로 나타낼때 주로사용한다  흔히 블로그글 중간사이드에 떠있는것도 aside </li>
+    <li>footer : 주로 웹사이트의 기타정보가 들어간다. 예를들어 저작권정보 컨택정보,사이트맵,페이지맨위로이동 등이있다.</li>
+  </p>
+<hr>
+  <h2> 클래스 구문</h2>
+  <p>클래스를 만들기 위해서는 style 태그로 감싸고 .클래스이름{ 내에 css속성 정의 } 이후 내용 <br>
+     다중클래스 사용시 중접할 클래스를 상위클래스 아래에 적어주면 된다 <br>
+     참고로 여러 요소가 동일한 클래스를 공유할 수 있음 <br>
+    클래스의 이름을 지정해줄때는 의미있는 이름으로 지어주자. </p>
+  <p>실습</p>
+
+  <style>
+    .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    }
+    .main {
+  text-align: center; 
+  }
+</style>
+    <h2 class="city main">한국</h2>
+    <p>한국은 한국어를 쓴다</p>
+    
+    <h2 class="city">일본</h2>
+    <p>일본은 일본어를 쓴다</p>
+    
+    <p class="city">중국 </p>
+    <p>T중국은 중국어를 쓴다</p>
+
+
+    <h3> id 와 class 의 차이점</h3>
+    <p>id 는  하나의 id 를 여러 요소가 공유할수 없다. <br>
+      그래서 유일하게 속성이 이 요소에서만 쓰일때 id를 사용하고, <br>
+      다른 요소에도 적용하고싶은 속성이라면 class를 사용한다.
+    </p>  
+
+</body>
+</html>
